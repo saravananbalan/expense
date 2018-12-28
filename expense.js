@@ -7,7 +7,10 @@ app.get("/index.html",function(req,res){
 })
 app.get("/expense",function (req,res){
 response = {
-	firstname: req.query.fname,
+
+	name: req.query.fname,
+	quantity : req.query.qunatity,
+	price: req.query.price,
         password : req.query.pword
 };
 console.log(response);
